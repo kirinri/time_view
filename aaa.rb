@@ -6,14 +6,13 @@ require 'date'
 
 get '/' do
   @title = "home"
+  @time = Time.now.strftime('%Y/%m/%d %H:%M:%S')
   erb :index
 end
 
 
-get '/a' do
-  # @title = "time"
-  erb :index2
 
-  # @time = params[:time]
-  # redirect to('/')
+
+post '/a' do
+  redirect to('/')
 end

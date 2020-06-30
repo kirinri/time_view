@@ -2,8 +2,8 @@
 <h1>時間</h1>
 
 <div class="contents">
-
-
+<%= @time %>
+<%= @title%>
 
 </div>
 
@@ -11,6 +11,8 @@
   <input type="button" value = "ボタン">
 </div> %>
 
-<form action="/a" method="get" class="action">
-  <input type="submit" value = "ボタン">
+<form action="/a" method="post" class="action">
+  <p ><%= Time.now.strftime('%Y/%m/%d %H:%M:%S')%></p>
+  <%#input type="submit" value = "ボタン"%>
+  <button type="submit" name="time" value="値を渡す">クリック</button>
 </form>
