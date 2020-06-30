@@ -1,0 +1,18 @@
+
+<h1>時間</h1>
+
+<div class="contents">
+
+<%# <%= Time.now.strftime('%Y/%m/%d %H:%M:%S')%>
+<%#= @time %>
+</div>
+
+<%# <div action = "/aaa" class="btn" method = "post">
+  <input type="button" value = "ボタン">
+</div> %>
+
+<form action="/a" method="get" class="action">
+  <p name = "time"><%= Time.now.strftime('%Y/%m/%d %H:%M:%S')%></p>
+  <%# <input type="text" name = "time" value=<%= Time.now.strftime('%Y/%m/%d %H:%M:%S') %>
+  <input type="submit" value = "ボタン">
+</form>
